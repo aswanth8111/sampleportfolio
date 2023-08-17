@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: font-family: 'Caveat', cursive;;
+
+}
+.wrk1{
+    width: 100%;
+    /* vh means view port height 1vh=19.2px */
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    display: flex;                       /* text comes to side by side */
+    justify-content: space-between;     /* to create space bwt two items */
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;             /* oru div inde excate vertically iragum */
+}
+.logo{
+    width: 130px;
+}
+   
+.listitem{
+    display: inline-block;       /* displaying items side by side */
+    list-style: none; /* to remove dots permently */
+    margin: 10px 20px;
+    
+/*  */
+}
+
+.links{
+     text-decoration: none;   /* to remove underline on texts */
+     color: black;
+     font-weight: bold;
+}
+/* tag:pseudo-class{property:value} */  
+/* onmouseover for text color change cursor touch */
+.links:hover{
+    color: red;
+}
+
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.title-h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.lastname{
+    color: green;
+}
+
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.title-img{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: -10px;    
+}
+
+/* 2 picture joined due to same child class */
+.title-img img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%); /* left -50 poye apo thireche veran vende aa -50 koduthee */
+    transition: bottom 1s , left 2s;
+}
+
+.title-img:hover #shape{
+    bottom: 70px;
+    
+    
+}
+.title-img:hover #zoro{
+    left: 40%; /* transform tag koduthe konde left ill space unde but athe kanula apo athe konde small valu kodkenam  */
+    
+}
+
+#about{
+    margin: 20% 8% 0px 8%;
+}
+.heading{
+    text-align: center;
+
+}
+
+.heading h2{
+    font-size: 45px;
+}
+.heading span{
+    font-size: 20px;
+    color: greenyellow;
+    
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 1 frame=255px */
+    gap: 2rem;    /* 1 rem= 16px(for gap making*/
+    margin-top: 50px;
+}
+
+.about-img img{
+    width: 80%;
+    border-radius: 2rem;
+
+}
+.about-details{
+    font-size: 19px;
+    font-weight: 500;
+    text-align: justify; /* to make all sentence in same line start and end */
+}
+.information{
+    margin-top: 2rem;
+}
+.infobox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.infobox span{
+    margin-left: 1rem;
+}
+
+/* .....................SKILLS section................................... */
+
+
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.skill-img{
+    width: 90%;
+    padding-left: 4rem;
+    
+}
+
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+.css-bar{
+    background-color: orange;
+    width: 80%;
+
+}
+.react-bar{
+    background-color: orange;
+    width: 78%;
+}
+.js-bar{
+    background-color: orange;
+    width: 85%;
+}
+
+/* ......................................................... */
+#contact{
+    margin-top: 5rem;
+}
+
+
+
+.icon-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;    
+}
+
+.icon , .up-arrow{
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, white, rgb(255, 128, 0));
+
+}
+
+.icon:hover i{
+    color: blueviolet;
+    /* for animation par1 */
+    animation: shake 0.81s;
+}
+
+/* for animation part2 */
+@keyframes shake{
+    10%{
+        transform: rotate(15deg); /* left shake */
+    }
+    20%{
+        transform: rotate(-15deg);  /* right shake */
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    60%{
+        transform: rotate(-15deg);
+    }
+    70%{
+        transform: rotate(15deg);
+    }
+    80%{
+        transform: rotate(-15deg);
+    }
+}
+/* ....................footer tag................................. */
+.footertext{
+    margin-top: 1rem;
+}
+
+.up-arrow{
+    float: right; /* to make arrow on right side */
+    /* check code line 211,, .up-arrow is given to that line for icon color */
+    background-image: linear-gradient(to bottom right, white, rgb(255, 128, 0));
+    margin: 0px 10px 20px 0px;
+         /* left,top,bottom,right */
+}
+
+.up-arrow:hover i{
+    color: white;
+}
+/* for scroll making smooth */
+html{
+    scroll-behavior: smooth;
+}
